@@ -39,15 +39,64 @@ function sideHTML(){
   return h;
 }
 function videosFor(key){
- const data={
-  intro:[['C++ бағдарламалау тіліне кіріспе | Қазақша сабақ #1','https://www.youtube.com/watch?v=wOJ9LMQT0N0']],
-  if:[['С++ сабақ 7 | Шартты оператор if else','https://www.youtube.com/watch?v=zv2l8zipMWg']],
-  loop:[['C++ циклдері — қазақша сабақтарды ашу','https://www.youtube.com/results?search_query=C%2B%2B+цикл+қазақша']],
-  array:[['С++ сабақ 13 | Бір өлшемді массив №1','https://www.youtube.com/watch?v=SETbWm_IYDI']],
-  function:[['С++ сабақ 17 | Функция №1','https://www.youtube.com/watch?v=yFywgECMn1k']],
-  struct:[['C++ struct — қазақша сабақтарды ашу','https://www.youtube.com/results?search_query=C%2B%2B+struct+қазақша']],
-  graphics:[['C++ графика — қазақша сабақтарды ашу','https://www.youtube.com/results?search_query=C%2B%2B+графика+қазақша']]
- };return data[key]||[['C++ тақырыбы бойынша қазақша сабақтарды ашу','https://www.youtube.com/results?search_query=C%2B%2B+қазақша+сабақ']];
+  const data = {
+
+    intro: [
+      [
+        'C++ бағдарламалау тіліне кіріспе | Қазақша сабақ',
+        'https://www.youtube.com/watch?v=wOJ9LMQT0N0'
+      ]
+    ],
+
+    if: [
+      [
+        'C++ сабақ — шартты оператор if / else',
+        'https://www.youtube.com/watch?v=zv2l8zipMWg'
+      ]
+    ],
+
+    loop: [
+      [
+        'C++ — цикл операторлары',
+        'https://www.youtube.com/watch?v=wza4fTMTHaY'
+      ]
+    ],
+
+    array: [
+      [
+        'С++ сабақ 13 — Бір өлшемді массив №1',
+        'https://www.youtube.com/watch?v=SETbWm_IYDI'
+      ],
+      [
+        'С++ сабақ 16 — Екі өлшемді массив №2',
+        'https://www.youtube.com/watch?v=kLQ2PCfQuds'
+      ]
+    ],
+
+    function: [
+      [
+        'С++ сабақ 17 — Функция №1',
+        'https://www.youtube.com/watch?v=yFywgECMn1k'
+      ]
+    ],
+
+    struct: [
+      [
+        'C++ — құрылымдар (struct)',
+        'https://www.youtube.com/watch?v=-TkoO8Z07hI'
+      ]
+    ],
+
+    graphics: [
+      [
+        'C++ — графикалық бағдарламалау',
+        'https://www.youtube.com/watch?v=-TkoO8Z07hI'
+      ]
+    ]
+
+  };
+
+  return data[key] || data.intro;
 }
 function videoHTML(lab){
  const videos=videosFor(lab[3]);
